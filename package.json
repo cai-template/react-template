@@ -1,0 +1,12 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "react template",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0"
+  }
+}
