@@ -4,7 +4,6 @@
   "description": "react模板",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --progress --colors --host 10.0.10.64 --hot --open"
   },
   "keywords": [
@@ -37,4 +36,5 @@
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0"
   }
+  
 }
