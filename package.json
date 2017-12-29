@@ -1,0 +1,40 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "react模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --colors --host 10.0.10.64 --hot --open"
+  },
+  "keywords": [
+    "react",
+    "template"
+  ],
+  "author": "2544403004@qq.com",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.3",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "open-browser-webpack-plugin": "0.0.5",
+    "postcss-loader": "^2.0.9",
+    "postcss-pxtorem": "^4.0.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0"
+  }
+}
