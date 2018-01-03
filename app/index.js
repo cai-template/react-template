@@ -5,4 +5,4 @@ import './index.scss'
 
 
  
-render(<Haha /> ,document.querySelector('.root'))
+render(<div>222</div>,document.querySelector('.root'))
