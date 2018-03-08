@@ -5,7 +5,16 @@ var webpack = require('webpack'),
     OpenBrowserPlugin=require('open-browser-webpack-plugin');
 
 module.exports = {
-	entry: path.resolve(__dirname, './app'),
+	entry: {
+        app: path.resolve(__dirname, './app'),
+        verdor: [
+            'react-dom',
+            'react',
+            'react-router',
+            'react-router-dom',
+            'whatwg-fetch'
+        ]
+    },
 	output: {
 		path: path.resolve(__dirname,'./dist'),
 		filename: 'bundle.js'
@@ -46,6 +55,22 @@ module.exports = {
           new HtmlWebpackPlugin({
                template: __dirname + '/app/index.tmpl.html'
           }),
+          // 为组件分配ID，通过这个插件webpack可以分析和优先考虑使用最多的模块，并为它们分配最小的ID
+    // new webpack.optimize.OccurenceOrderPlugin(),
+    
+            new webpack.optimize.UglifyJsPlugin({
+                compress: {
+                warnings: false
+                }
+            }),
+            new webpack.optimize.CommonsChunkPlugin({
+                name: 'vendor',
+                filename: 'js/[name].[chunkhash:7].js'
+              }),
+              new webpack.DefinePlugin({
+                __DEV__: JSON.stringify(JSON.parse((process.env.NODE_ENV == 'dev') || 'false'))
+              }),
+              new webpack.optimize.AggressiveMergingPlugin()//合并块 没啥吊用
 	],
   devServer:{
     contentBase:'./app',
