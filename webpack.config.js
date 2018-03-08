@@ -21,10 +21,16 @@ module.exports = {
                          }
               },'sass-loader']
             })}, 
-            {test: /\.js/ , use: {
+            {
+              test: /\.js/ ,
+              exclude: /node_modules/,
+               use: {
                 loader: 'babel-loader',
                 options: {
-                  presets: ['react','es2015','stage-0']
+                  presets: ['react','es2015','stage-0'],
+                  plugins: [
+                    "transform-runtime"
+                   ]
                 }
 
             }},
@@ -53,5 +59,11 @@ module.exports = {
     port:8088,
     inline:true,
     hot:true,
+    proxy: {
+      '/loanweb':{
+        target: 'http://loan.huishuaka.com',
+        changeOrigin: true
+      }
+    }
   }
 }
