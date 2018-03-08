@@ -37,12 +37,14 @@ export let post = (url,param,time = 4e3) => {
 }
 
 
-export get = (url,time = 4e3) => {
+export let get = (url,time = 4e3) => {
 	return timeout(fetch(url,{
 		method: 'GET',
 		credentials: 'include',
 		headers: {
 			'Accept': 'application/json, text/plain, */*',
 		},
-	}),time).then(checkStatus).then(res => res.json())
+	}),time)
+	.then(checkStatus)
+	.then(res => res.json())
 }

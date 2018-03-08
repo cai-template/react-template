@@ -29,14 +29,25 @@ module.exports = {
                   presets: ['react','es2015','stage-0']
                 }
 
-            }}
+            }},
+            {
+              test: /\.(png|jpg|gif)$/,
+              use: [
+                {
+                  loader: 'url-loader',
+                  options: {
+                    limit: 8192
+                  }
+                }
+              ]
+            }      
 		]
 	},
 	plugins: [
           new ExtractTextWebpackPlugin('styles.css'),
           new HtmlWebpackPlugin({
                template: __dirname + '/app/index.tmpl.html'
-          })
+          }),
 	],
   devServer:{
     contentBase:'./app',

@@ -4,5 +4,9 @@ import {render} from 'react-dom'
 import './index.scss'
 
 
+import Router from './router'
+
  
-render(<div>222</div>,document.querySelector('.root'))
+render(<div>
+  <Router />
+</div>,document.querySelector('.root'))
