@@ -55,7 +55,7 @@ module.exports = {
 	],
   devServer:{
     contentBase:'./app',
-    host:'10.0.10.64',
+    host:'172.16.244.100',
     port:8088,
     inline:true,
     hot:true,

@@ -4,7 +4,7 @@
   "description": "react模板",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --host 10.0.16.133 --hot --open",
+    "dev": "webpack-dev-server --progress --colors --host 172.16.244.100 --hot --open",
     "build": "webpack --config ./webpack.pro.js --progress --colors"
   },
   "keywords": [
