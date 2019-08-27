@@ -1,7 +1,7 @@
 {
-  "name": "react-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "react模板",
+  "description": "{{ description }}",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --host 172.16.244.100 --hot --open",
