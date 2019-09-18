@@ -11,7 +11,7 @@
     "react",
     "template"
   ],
-  "author": "2544403004@qq.com",
+  "author": "{{ author }}",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.2.3",

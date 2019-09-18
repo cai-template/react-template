@@ -18,22 +18,22 @@ export default class RouterMap extends Component{
                 <Route path="/user" component={User}></Route>
                 <ul className="footer">
                     <li>
-                        <NavLink exact to="/" activeStyle="\{{ color: '#fa863e' }}" activeClassName='active_home' replace>
+                        <NavLink exact to="/" activeStyle={{ color: '#fa863e' }} activeClassName='active_home' replace>
                         <font>首页</font>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/order" activeStyle="\{{ color: '#fa863e' }}" activeClassName='active_order'  replace>
+                        <NavLink to="/order" activeStyle={{ color: '#fa863e' }} activeClassName='active_order'  replace>
                         <font>抢单</font>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/makemoney" activeStyle="\{{ color: '#fa863e' }}" activeClassName='active_makemoney'  replace>
+                        <NavLink to="/makemoney" activeStyle={{ color: '#fa863e' }} activeClassName='active_makemoney'  replace>
                         <font>赚钱</font>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/user" activeStyle="\{{ color: '#fa863e' }}" activeClassName='active_user' replace>
+                        <NavLink to="/user" activeStyle={{ color: '#fa863e' }} activeClassName='active_user' replace>
                         <font>个人中心</font>
                         </NavLink>
                     </li>

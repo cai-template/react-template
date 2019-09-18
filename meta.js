@@ -19,5 +19,6 @@ module.exports = {
       type: 'string',
       message: 'Author',
     }
-  }
+  },
+  skipInterpolation: [ 'app/router/index.js' ]
 }
