@@ -1,12 +1,15 @@
-import React from 'react'
-import {render} from 'react-dom'
-import { Provider } from 'react-redux'
-import './index.scss'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import Router from './route';
 
-import configure from './store'
-import Router from './router'
 
- 
-render(<Provider store={configure()}>
-  <Router />
-</Provider>,document.querySelector('.root'))
+import style from './index.scss'
+
+
+
+
+
+
+
+
+render(<Router className={style.root} />, document.querySelector('.root'))
